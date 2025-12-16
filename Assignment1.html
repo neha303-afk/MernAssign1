@@ -1,0 +1,139 @@
+<html>
+<head>
+    <title>Assignment 01</title>
+
+    <style>
+        .main-box {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .video-wrap img {
+            width: 350px;
+            border: 1px solid #ccc;
+        }
+
+      
+    .row {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin: 8px 0;
+        justify-content: space-between;
+        width: 350px; /* adjust width as needed */
+    }
+
+    .row label {
+        width: 120px; /* keeps all labels aligned */
+        text-align: right;
+        font-weight: bold;
+    }
+
+    .row input,
+    .row textarea,
+    .row select {
+        flex: 1;
+    }
+</style>
+
+ 
+
+</head>
+
+<body>
+
+    <!-- Centered Logo -->
+    <div style="text-align:center;">
+        <img src="C:\Users\Neha Hanamapure\OneDrive\Pictures\img.png">
+    </div>
+
+    <h1 style="text-align: center;">Sunbeam Registration form</h1>
+
+
+    <div class="main-box">
+        <div class="video-wrap">
+            <img src="C:\Users\Neha Hanamapure\OneDrive\Pictures\img1.png" style="height: 350px; width: 500;">
+        </div>
+
+      
+        <form>
+
+            <ul>
+                <div class="row">
+                <label><b>Name:</b></label>
+                <input type="text" placeholder="Enter Username" required>
+            </div>
+            </ul>
+
+            <ul>
+                <div class="row">
+                <label><b>Birthdate:</b></label>
+                <input type="text" placeholder="dd/mm/yyyy" required>
+               </div>
+            </ul>
+
+            <ul>
+                <div class="row">
+                <label><b>Email:</b></label>
+                <input type="text" placeholder="Enter email" required>
+                </div>
+            </ul>
+
+            <ul>
+                <div class="row">
+                <label><b>Password:</b></label>
+                <input type="password" placeholder="Enter Password" required>
+                </div>
+            </ul>
+
+            <ul>
+                <div class="row">
+                <label><b>Address:</b></label>
+                <textarea rows="5" cols="15"></textarea>
+                </div>
+            </ul>
+
+            <ul>
+                <div class="row">
+                <label><b>Gender:</b></label>
+                <input type="radio" name="gender"> Female
+                <input type="radio" name="gender"> Male
+                </div>
+            </ul>
+
+            <ul>
+                <div class="row">
+                <label><b>Upload photo:</b></label>
+                <input type="file" required>
+                </div>
+            </ul>
+
+            <label><div class="row"><b>Select your Course:</b></label>
+            <select>
+             
+                <option>Select course</option>
+                <option>Java</option>
+                <option>CPP</option>
+                <option>OS</option>
+            </select>
+            </div>
+            <ul>
+                <div class="row">
+                <label><b>Skill set:</b></label>
+                <input type="checkbox"> Java
+                <input type="checkbox"> CPP
+                <input type="checkbox"> OS
+                </div>
+            </ul>
+
+            <button type="submit">Register</button>
+            <button type="reset">Clear</button>
+
+        </form>
+
+    </div>
+
+</body>
+</html>
